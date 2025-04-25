@@ -6,8 +6,7 @@ class Solution {
     ///Iterate through and compare prices(profit) diff and update minimum
     int minimum = prices[0];
     int profit = 0;
-
-    for(int i=1;i<prices.length;i++){
+    for(int i = 1;i<prices.length;i++){
         final cost = prices[i] - minimum;
         profit = max(profit,cost);
         minimum = min(minimum,prices[i]);
@@ -16,3 +15,4 @@ class Solution {
     return profit;
   }
 }
+
