@@ -8,6 +8,7 @@ class Solution {
         if(map.containsKey(nums[i])){
             ans = true;
             map[nums[i]] = (map?[nums[i]] ?? 0) + 1;
+            break;
         }else{
             map[nums[i]] = 0;
         }
