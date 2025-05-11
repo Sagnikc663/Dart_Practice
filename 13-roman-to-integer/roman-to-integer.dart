@@ -5,7 +5,7 @@ class Solution {
         if(i+1<s.length && ((toRoman(s[i])) < toRoman(s[i+1]))){
             ///Eg. This case checks Instead, the number four is written as IV
             ///As in IV, I-1,V-5,so I<V , then=> IV = 5-1 = 4; or susbtract i 
-            ///==from result
+            ///from result
             result -= toRoman(s[i]);
         }else{ 
         result += toRoman(s[i]);
